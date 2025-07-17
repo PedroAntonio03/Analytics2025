@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .topo {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .topo .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .busca input {
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .busca button {
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .secao {
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .nome {
+      font-weight: bold;
+    }
+
+    .preco {
+      color: green;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 30px 0;
+      box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <div class="container-fluid topo py-3 px-4 d-flex justify-content-between align-items-center">
+    <div class="logo">Analytics Store</div>
+    <div class="busca d-flex flex-grow-1 mx-4">
+      <input type="text" class="form-control" placeholder="Buscar produtos, marcas etc" />
+      <button class="btn btn-warning fw-bold">Buscar</button>
+    </div>
+    <div class="login-links">
+      <a href="#" class="text-primary fw-bold me-3">Entrar</a>
+      <a href="#" class="text-primary fw-bold me-3">Criar conta</a>
+      <a href="#" class="text-primary fw-bold">Carrinho</a>
+    </div>
+  </div>
+
+  <!-- Menu de Categorias -->
+  <div class="container-fluid bg-light py-2 px-4">
+    <div class="d-flex flex-wrap gap-3">
+      <a href="#" class="text-dark text-decoration-none">Notebooks</a>
+      <a href="#" class="text-dark text-decoration-none">Smartphones</a>
+      <a href="#" class="text-dark text-decoration-none">Acessórios</a>
+      <a href="#" class="text-dark text-decoration-none">Smartwatches</a>
+      <a href="#" class="text-dark text-decoration-none">Áudio</a>
+      <a href="#" class="text-dark text-decoration-none">Casa Inteligente</a>
+      <a href="#" class="text-dark text-decoration-none">Gamers</a>
+      <a href="#" class="text-dark text-decoration-none">Ver mais</a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner container my-4">
+    <img src="https://lh6.googleusercontent.com/eRCReqYMv5I-jX8vr209MLR8bu3FdaZ7kD5pn5XHSBikE2T4PTgtMqXK2ZydwVqbiIo7Ov7mU4aEEzbyRD1CdR8U9eHHO5H7LrDXyGMUZGS5iUAEsioz0kFZGSM7AwbZj2jNemrWJsmhNEL97Q8eD2s" alt="Banner principal">
+  </div>
+
+  <!-- Ofertas do Dia -->
+  <section class="secao container">
+    <h2>Ofertas do Dia</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 text-center">
+          <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3520/media-gallery/notebook-inspiron-15-3520-black-gallery-10.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=606&qlt=100,1&resMode=sharp2&size=606,402&chrss=full" alt="Notebook Dell">
+          <p class="nome mt-2">Notebook Dell Inspiron</p>
+          <p class="preco">R$ 3.199,00</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 text-center">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRURo5_wZ9EC8i7TKw-jvdb4uD6iCpRa7xcGd6xs1HAblBACoLX5qIqsI0V4jhJio27NYo8JPzwDQTUEbWN_V1n4BIJzCcePGK2kV0UJ8yPtafIFFj2QX3XTEOlXza9sq-y_MD226M&usqp=CAc" alt="Fone JBL">
+          <p class="nome mt-2">Fone JBL Tune 510BT</p>
+          <p class="preco">R$ 199,90</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 text-center">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ33xZ_f-S2kbD8aJT7GwP1_3XHMKGGXbyfMeGXxPKDL8NV3AIwst4bvtGpvVRfbhouc9FBx_iSZcMKWw5P3CzoL2nA-VbpZDPSwfL1OJkoZaCM1EXX-gGrgyWaY8VZ58fKhT-RE9w&usqp=CAc" alt="Mouse Gamer">
+          <p class="nome mt-2">Mouse Gamer RGB</p>
+          <p class="preco">R$ 129,90</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias em Destaque -->
+  <section class="secao container">
+    <h2>Categorias em Destaque</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 text-center">
+          <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT4kciYS92KJc2IkkF-wUB8nJrsy_9QgAl2hXqgD4JWXTtUN0On_hkVxgBVKmjrrABynzB4uZlJhwkVo5nTSvCH1yK-4i25T0rgqR623HLFQUf3lc6d0c4zxFXAnEPDf5XFlmP7pzM7-Gs&usqp=CAc" alt="Notebooks">
+          <p class="nome mt-2">Notebooks</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTu1VBuIZ0b31iXpsCDLFOhj0aOZ4lYqqO27EeKfyG5tywBvGSLkaMHSMYhjkY8GOkgAwjREIiUE3E5ECcqg7NUVzk9Wqz7J74SvtjtEzRzT9dzmZc0BMA__JCEiZqA3WH0Ay3bxw&usqp=CAc" alt="Smartphones">
+          <p class="nome mt-2">Smartphones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Compras</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">Prazo de entrega</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Venda Conosco</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Seja um vendedor</a></li>
+            <li><a href="#">Políticas de vendas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Institucional</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Sobre o Ecommerce</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Redes Sociais</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 Analytics Store. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
